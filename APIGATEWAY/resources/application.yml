@@ -7,8 +7,8 @@ spring:
   #     client:
   #       registration:
   #         okta:
-  #           client-id: 0oamw9y81eyuiIPy75d7
-  #           client-secret: FI0HgTIEGhm_7IJdOMt-CzOxrti7OXuAebd4zo6JvI0VTwGbtYSG9v3Q-IOToQ9i
+  #           client-id: 0oamw*************75d7
+  #           client-secret: FI0HgTIEGhm********************************TwGbtYSG9v3Q-IOToQ9i
   #           scope:
   #             - openid
   #             - profile
