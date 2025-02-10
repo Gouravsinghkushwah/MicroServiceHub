@@ -1,0 +1,21 @@
+server:
+  port: 8085
+
+spring:
+  config:
+    import: optional:configserver:http://localhost:8085
+  application:
+    name: CONFIGSERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Gouravsinghkushwah/microservice-configuration
+          clone-on-start: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8765/eureka
+    register-with-eureka: true
+    fetch-registry: true
