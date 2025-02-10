@@ -1,0 +1,29 @@
+server:
+  port: 8082
+
+
+spring:
+#  profiles:
+#   active: Dev
+  application:
+    name: HOTELSERVICE
+  datasource:
+    url: jdbc:postgresql://localhost:5433/HotelService
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update  # Optional, this can help with automatic schema generation
+    show-sql: true  # Optional, to log SQL queries
+    # dialect: org.hibernate.dialect.PostgreSQLDialect  # Uncomment this line if needed
+  config:
+    import: optional:configserver:http://localhost:8085
+#eureka: 
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://localhost:8765/eureka  # Fixed typo: "dfaultZone" -> "defaultZone" and corrected the URL
