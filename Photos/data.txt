@@ -1,0 +1,1 @@
+All the services are exceuting from same port (APIGateWay)
