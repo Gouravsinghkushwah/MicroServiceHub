@@ -1,1 +1,1 @@
-All the services are exceuting from same port (APIGateWay)
+All the services are exceuting from same port that is 8084 (APIGateWay)
